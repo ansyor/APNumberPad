@@ -26,6 +26,7 @@
 		B23467A31974A61800FE3F7A /* APNumberPadDefaultStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = B23467A01974A61800FE3F7A /* APNumberPadDefaultStyle.m */; };
 		B23467A61974A66A00FE3F7A /* APDarkPadStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = B23467A51974A66A00FE3F7A /* APDarkPadStyle.m */; };
 		B2DD031B197578030051DD71 /* APBluePadStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DD031A197578030051DD71 /* APBluePadStyle.m */; };
+		ED13F8CC7C814AC37C792E1F /* Pods_APNumberPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93FACB87A11D2DA057F46F3E /* Pods_APNumberPad.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,9 @@
 		2ACD620419261A19005E5DA5 /* APNumberPadExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APNumberPadExampleViewController.h; sourceTree = "<group>"; };
 		2ACD620519261A19005E5DA5 /* APNumberPadExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APNumberPadExampleViewController.m; sourceTree = "<group>"; };
 		2ACD620819261D53005E5DA5 /* APNumberPad.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = APNumberPad.bundle; sourceTree = "<group>"; };
+		853F3BD54660BF9D0EC7C4E7 /* Pods-APNumberPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNumberPad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APNumberPad/Pods-APNumberPad.debug.xcconfig"; sourceTree = "<group>"; };
+		93FACB87A11D2DA057F46F3E /* Pods_APNumberPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APNumberPad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A79F5E4DC9657CD005EA86EF /* Pods-APNumberPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNumberPad.release.xcconfig"; path = "Pods/Target Support Files/Pods-APNumberPad/Pods-APNumberPad.release.xcconfig"; sourceTree = "<group>"; };
 		B234679B1974A61800FE3F7A /* APNumberButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APNumberButton.h; sourceTree = "<group>"; };
 		B234679C1974A61800FE3F7A /* APNumberButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APNumberButton.m; sourceTree = "<group>"; };
 		B234679D1974A61800FE3F7A /* APNumberPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APNumberPad.h; sourceTree = "<group>"; };
@@ -79,6 +83,7 @@
 				2ACD618719260EBD005E5DA5 /* CoreGraphics.framework in Frameworks */,
 				2ACD618919260EBD005E5DA5 /* UIKit.framework in Frameworks */,
 				2ACD618519260EBD005E5DA5 /* Foundation.framework in Frameworks */,
+				ED13F8CC7C814AC37C792E1F /* Pods_APNumberPad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +107,7 @@
 				2ACD61A319260EBD005E5DA5 /* APNumberPadTests */,
 				2ACD618319260EBD005E5DA5 /* Frameworks */,
 				2ACD618219260EBD005E5DA5 /* Products */,
+				93F58F652B2BF3B6ABDFB0B7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +127,7 @@
 				2ACD618619260EBD005E5DA5 /* CoreGraphics.framework */,
 				2ACD618819260EBD005E5DA5 /* UIKit.framework */,
 				2ACD619D19260EBD005E5DA5 /* XCTest.framework */,
+				93FACB87A11D2DA057F46F3E /* Pods_APNumberPad.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -170,6 +177,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		93F58F652B2BF3B6ABDFB0B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				853F3BD54660BF9D0EC7C4E7 /* Pods-APNumberPad.debug.xcconfig */,
+				A79F5E4DC9657CD005EA86EF /* Pods-APNumberPad.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B23467991974A59B00FE3F7A /* DemoStyles */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,9 +218,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2ACD61AD19260EBD005E5DA5 /* Build configuration list for PBXNativeTarget "APNumberPad" */;
 			buildPhases = (
+				8FA271166B1699BE121DAB2A /* [CP] Check Pods Manifest.lock */,
 				2ACD617D19260EBD005E5DA5 /* Sources */,
 				2ACD617E19260EBD005E5DA5 /* Frameworks */,
 				2ACD617F19260EBD005E5DA5 /* Resources */,
+				337331AF211CB9B0D8A6EA0E /* [CP] Embed Pods Frameworks */,
+				52B1F5BE9B3ACA9AEF362C20 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -286,6 +305,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		337331AF211CB9B0D8A6EA0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APNumberPad/Pods-APNumberPad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52B1F5BE9B3ACA9AEF362C20 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APNumberPad/Pods-APNumberPad-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FA271166B1699BE121DAB2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2ACD617D19260EBD005E5DA5 /* Sources */ = {
@@ -413,6 +480,7 @@
 		};
 		2ACD61AE19260EBD005E5DA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 853F3BD54660BF9D0EC7C4E7 /* Pods-APNumberPad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -426,6 +494,7 @@
 		};
 		2ACD61AF19260EBD005E5DA5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A79F5E4DC9657CD005EA86EF /* Pods-APNumberPad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

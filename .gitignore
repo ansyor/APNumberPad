@@ -26,3 +26,5 @@ build/
 # AppCode specific files
 .idea/
 *.iml
+
+Example/Podfile.lock
